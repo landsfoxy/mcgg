@@ -541,7 +541,7 @@ log: ".$_POST['dir']."/ngrok.log \n
 	// Accept eula
 	file_put_contents($_POST['dir'].'/eula.txt','eula=TRUE');
 	// Copy spigot
-	if ($_POST['version'] == '1.10.2') {
+	if ($_POST['version'] == '1.8') {
 		copy('serverbase/spigot-1.8.jar',$_POST['dir'].'/spigot-1.8.jar');
 	} else if ($_POST['version'] == '1.11.2') {
 		copy('serverbase/spigot-1.11.2.jar',$_POST['dir'].'/spigot-1.11.2.jar');
